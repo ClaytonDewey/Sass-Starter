@@ -1,0 +1,10 @@
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gap);
+
+  &-item {
+    flex: 0 1
+      cald((100% / var(--columns)) - var(--gap) + (var(--gap) / var(--columns)));
+  }
+}
